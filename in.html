@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <p>test 3 git</p>
+    <center>
+        <p id="title"></p>
+        <img src="" alt="" id="img" width="200px"> 
+        <p id="likes"></p>
+        <p id="user"></p>
+    </center>
+
+<script>
+
+const post = {
+    title: 'Post 1',
+    img: 'https://cdn.pixabay.com/photo/2012/04/26/09/09/woman-41891_1280.png',
+    likes: 100,
+    user: 'It-run',
+}
+
+document.getElementById("title").innerHTML = post.title;
+document.getElementById("img").src = post.img;
+document.getElementById("likes").innerHTML = post.likes;
+document.getElementById("user").innerHTML = post.user;
+
+</script>
+
 </body>
 </html>
